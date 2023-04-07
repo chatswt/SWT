@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cờ tướng</title>
+</head>
+<body>
+    <script scr="/engine/2ng.js"></script>
+    <script>
+        let ranks=['11','10','9','8','7','6','5','4','3','2','1','0','-1','-2'];
+let files=['x','a','b','c','d','e','f','g','h','i','x'];
+let str='';
+for(let rank=0; rank <14; rank++){
+    for(let file=0; file<11; file++){
+        let square=rank * 11 + file;
+        str+= files[file]+ranks[rank]+'='+square+', ';
+    }
+    str += '\n';
+}
+console.log(str);
+    </script>
+</body>
+</html>
